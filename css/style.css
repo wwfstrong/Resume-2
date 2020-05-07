@@ -21,7 +21,6 @@ p {
 
 h1 {
   font-size: 25px;
-  margin-top: 0;
 }
 
 h4,
@@ -43,7 +42,7 @@ strong {
 }
 
 a {
-  color: #999;
+  color: #f60;
   text-decoration: none;
   border-bottom: 1px solid;
 }
@@ -70,9 +69,10 @@ h6 {
 
 .bio img {
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 10px;
+  right: 60px;
 }
+
 #skills {
   width: 500px;
   height: 270px;
@@ -96,45 +96,25 @@ h6 {
 }
 
 .skills > .wrapper > ul > li {
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 8px;
 }
-.openSource header img {
-  position: absolute;
-  top: 0;
-  right: 0;
+
+.projects > ul > li {
+  margin-bottom: 20px;
 }
 
-.openSource > ul > li {
-  margin-bottom: 24px;
-}
-
-.openSource header {
+.projects header {
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+.projects ul li a:hover {
+  color: #f60;
+  transition: all 0.3s;
 }
 .jobs > ol > li {
   margin: 12px 0;
 }
 
-.jobs header {
-  display: flex;
-  color: #666;
-  margin-bottom: 12px;
-}
 
-.jobs header > h3 {
-  font-size: 18px;
-  color: #333;
-}
-
-.jobs header > h4 {
-  margin-left: 1em;
-  font-size: 18px;
-}
-
-.jobs header > span {
-  font-size: 18px;
-  margin-left: auto;
-}

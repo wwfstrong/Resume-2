@@ -11,11 +11,6 @@
         body {
             margin: 0;
         }
-
-        .page2 {
-            page-break-before: always;
-            margin-top: 30px;
-        }
     </style>
     <style>
         @media (max-width: 500px) {
@@ -39,16 +34,6 @@
             #skills {
                 width: auto;
             }
-
-            .jobs header {
-                flex-direction: column;
-            }
-
-            .jobs header>h3,
-            .jobs header>h4,
-            .jobs header>span {
-                margin: 0;
-            }
         }
     </style>
 </head>
@@ -57,8 +42,8 @@
     <article>
         <section class="bio">
             <h1>王文峰</h1>
-            <img src="./images/头像.jpg" alt="" width="110" height="140">
-            <p>男 | 前端开发工程师 | 杭州</p>
+            <img src="./images/头像.jpg" alt="" width="97" height="140">
+            <p>男 | 杭州 | 前端开发工程师</p>
             <p>手机：18646024909 | 微信：wwf865475679 | 邮箱：865475679@qq.com</p>
         </section>
 
@@ -73,81 +58,74 @@
                 <div id="skills"></div>
                 <ul>
                     <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
-                    <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+                    <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、Cookie、Session 等</li>
                     <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
                     <li>熟练掌握 <strong>React</strong>的使用</li>
-                    <li>熟悉 <strong>ES6</strong>，包括 let / Promise / await / class</li>
+                    <li>熟悉 <strong>ES6</strong>，包括 let / Promise / await / class等</li>
                     <li>了解 <strong>TypeScript</strong> 的使用</li>
                     <li>了解 <strong>Webpack 的配置和优化</strong></li>
                 </ul>
             </div>
         </section>
 
-        <section class="openSource">
-            <h2>开源项目</h2>
+        <section class="projects">
+            <h2>项目经历</h2>
             <ul>
                 <li>
                     <header>
-                        <h3>自己写的 DOM 库</h3>
-                        <a href="#">源码链接</a>
-                    </header>
-                    <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
-                </li>
-                <li class="page2">
-                    <header>
-                        <h3>会动的哆啦A梦</h3>
+                        <h3>网站导航</h3>
                         <span>
-                            <a href="#">源码链接</a>
-                            <a href="https://fangyinghang.com/make-a-pikachu/">项目预览</a>
+                            <a href="https://github.com/wwfstrong/Navigation" target="_blank">源码链接</a>
+                            <a href="https://wwfstrong.github.io/Navigation/" target="_blank">项目预览</a>
                         </span>
                     </header>
-                    <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;此项目是用原生JS开发的网站导航，主体部分是仿键盘的样式，可以按键访问相应的网页。该作品主要思路是，把需要创建的元素放到 Hash 中，然后通过
+                        JavaScript 自动生成 HTML 标签和监听键盘事件的API来实现目的。</p>
                 </li>
                 <li>
                     <header>
-                        <h3>简易画板</h3>
+                        <h3>CNode 社区</h3>
                         <span>
-                            <a href="#">源码链接</a>
-                            <a href="#">项目预览</a>
+                            <a href="https://github.com/wwfstrong/CNODE" target="_blank">源码链接</a>
+                            <a href="https://wwfstrong.github.io/CNODE/" target="_blank">项目预览</a>
                         </span>
                     </header>
-                    <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;此项目使用 Vue 还原CNode官方社区，项目调用CNode官方社区提供的 API ，以 Vue cli 创建项目模版，使用 Axios
+                        获取数据，使用 Vue Router 进行前端路由的切换及传参，使用 watch 监听路由的变化。</p>
+                </li>
+                <li>
+                    <header>
+                        <h3>峰峰记账</h3>
+                        <span>
+                            <a href="https://github.com/wwfstrong/Money" target="_blank">源码链接</a>
+                            <a href="https://wwfstrong.github.io/Money-website/" target="_blank">项目预览</a>
+                        </span>
+                    </header>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;此项目是使用 Vue 框架和 TypeScript
+                        开发的移动端记账应用。该应用包括：记账、明细、统计三个页面，可以非常清晰的记录支出和收入，还可以通过图表查看消费记录，是一款极简的记账应用。</p>
+                </li>
+                <li>
+                    <header>
+                        <h3>手机音乐播放器</h3>
+                        <span>
+                            <a href="https://github.com/wwfstrong/Huawei" target="_blank">源码链接</a>
+                            <a href="https://wwfstrong.github.io/Huawei/" target="_blank">项目预览</a>
+                        </span>
+                    </header>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;此项目是使用原生 JS 和
+                        Parcel打包工具开发的移动端仿华为音乐播放器。该播放器有两个页面，可以通过左右滑动切换页面，主页面为svg做的效果图，副页面是和歌曲同步的歌词，此播放器实现了暂停、播放、换歌等功能。
+                    </p>
                 </li>
             </ul>
         </section>
 
         <section class="jobs">
-            <h2>工作经历</h2>
+            <h2>个人经历</h2>
             <ol>
                 <li>
-                    <header>
-                        <h3> 彩云工作室 </h3>
-                        <h4>全栈开发工程师（Ruby+JS）</h4>
-                        <span><time>2017年1月</time>~<time>2018年1月</time></span>
-                    </header>
-                    <ul>
-                        <li>
-                            独立负责 iPad 客户端的后台 <strong>Rails</strong> 开发和前端开发工作
-                        </li>
-                        <li>
-                            负责团队基础库开发、单元测试、文档撰写，确保测试<strong>覆盖率达到 90%</strong> 以上
-                        </li>
-                        <li>
-                            作为前端骨干，负责给前端较弱的同事进行培训，提高其前端开发工作效率
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <header>
-                        <h3>哦外巴巴集团杭州总部</h3>
-                        <h4>开发工程师</h4>
-                        <span><time>2015年1月</time>~<time>2017年1月</time></span>
-                    </header>
-                    <ul>
-                        <li>独立负责某 CRM 系统的开发与维护（后端使用Groovy，前端使用JS）</li>
-                        <li>负责全部门 <strong>UI 框架的开发</strong>，包括对话框、<strong>树形组件</strong>、<strong>日期选择器</strong>等常用组件</li>
-                        <li>定期组织内部分享，包括 Git 的使用、<strong>ES6 新特性</strong>、TypeScript 等话题</li>
-                    </ul>
+                    &nbsp;&nbsp;&nbsp;&nbsp;2015年7月毕业后在中铁二十三局工作，担任技术负责人一职，主要负责现场施工和工程验收等工作。
+                    因个人原因于2018年9月辞职，因一直对计算机有着浓厚的兴趣，离职之后开始自学前端，最近一年大量学习编程知识，目前 <strong>可以独立完成PC端和移动端的页面制作。</strong> 
+                    3年中铁的工作经历使自己练就了可应对高强度工作的能力，自我驱动能力强，乐于学习新的知识。<strong>终极目标是成为一名优秀的全栈工程师。</strong> 
                 </li>
             </ol>
         </section>
@@ -155,8 +133,8 @@
         <section class="others">
             <h2>其他链接</h2>
             <ul>
-                <li><a href="https://www.jianshu.com/u/056c1be0ce93">我的博客</a>，目前已有 10 篇技术文章</li>
-                <li><a href="https://github.com/wwfstrong">我的 GitHub</a>，有 200 多次提交</li>
+                <li><a href="https://www.jianshu.com/u/056c1be0ce93" target="_blank">我的博客</a>，目前已有 10 多篇技术文章</li>
+                <li><a href="https://github.com/wwfstrong" target="_blank">我的 GitHub</a>，有 200 多次提交</li>
             </ul>
         </section>
 
